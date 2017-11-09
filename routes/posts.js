@@ -27,7 +27,7 @@ var middle= function(req, res, next) {
 
 router.get('/login',middle,function (req,res,next) {
     res.json({
-        status:"success"
+        status:"token accepted"
     })
 })
 
