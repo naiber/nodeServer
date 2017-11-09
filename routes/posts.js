@@ -16,10 +16,12 @@ app.use(bodyParser.json())*/
 
 var middle= function(req, res, next) {
     if(req.query.t && req.query.t==="admin") {
+        console.log("entra mbare");
         next()
     }
     else{
         res.status(401).json({status:"Token not valid"});
+        console.log("vatinni di cca");
     }
 };
 
